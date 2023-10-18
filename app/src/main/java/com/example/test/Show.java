@@ -42,7 +42,7 @@ public class Show extends AppCompatActivity {
                 String email = cursor.getString(2);
 
                 TextView data = new TextView(this);
-                data.setText("Nombre: " + name + " Email: " + email);
+                data.setText("Nombre: " + name + " Email: " + email );
                 layout.addView(data);
             }while(cursor.moveToNext());
         }
