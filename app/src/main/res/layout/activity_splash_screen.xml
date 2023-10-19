@@ -8,9 +8,84 @@
 
 
    <ImageView
+
        android:id="@+id/backgroundSplash"
+
        android:layout_width="match_parent"
+
        android:layout_height="match_parent"
-       ></ImageView>
+
+       />
+
+
+
+
+
+   <ImageView
+
+       android:id="@+id/logoSplash"
+
+       android:layout_width="100dp"
+
+       android:layout_height="wrap_content"
+
+       android:src="@drawable/huella_de_zapato"
+
+       app:layout_constraintStart_toStartOf="@id/v1"
+
+       app:layout_constraintEnd_toEndOf="@id/v2"
+
+       app:layout_constraintBottom_toTopOf="@id/h2"
+
+       />
+
+
+
+   <androidx.constraintlayout.widget.Guideline
+
+       android:id="@+id/v1"
+
+       android:orientation="vertical"
+
+       app:layout_constraintGuide_percent="0.25"
+
+       android:layout_width="wrap_content"
+
+       android:layout_height="wrap_content"
+
+       />
+
+   <androidx.constraintlayout.widget.Guideline
+
+       android:id="@+id/v2"
+
+       android:orientation="vertical"
+
+       app:layout_constraintGuide_percent="0.75"
+
+       android:layout_width="wrap_content"
+
+       android:layout_height="wrap_content"
+
+       />
+
+   <androidx.constraintlayout.widget.Guideline
+
+       android:id="@+id/h2"
+
+       android:orientation="horizontal"
+
+       app:layout_constraintGuide_percent="0.50"
+
+       android:layout_width="wrap_content"
+
+       android:layout_height="wrap_content"
+
+       />
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
