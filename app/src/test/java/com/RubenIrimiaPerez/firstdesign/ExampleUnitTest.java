@@ -1,4 +1,4 @@
-package com.example.test;
+package com.RubenIrimiaPerez.firstdesign;
 
 import org.junit.Test;
 
