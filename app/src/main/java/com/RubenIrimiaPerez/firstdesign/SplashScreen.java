@@ -3,7 +3,10 @@ package com.RubenIrimiaPerez.firstdesign;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
@@ -15,6 +18,15 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+
+
+        ImageView logoSplash = findViewById(R.id.logoSplash);
+        TextView appNameSplash = findViewById(R.id.appNameSplah);
+        Animation fadeAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in);
+        logoSplash.startAnimation(fadeAnimation);
+        appNameSplash.startAnimation(fadeAnimation);
+
+
 
         ImageView background = findViewById(R.id.backgroundSplash);
         Glide.with(this)
